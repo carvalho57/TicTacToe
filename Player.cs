@@ -1,18 +1,14 @@
-﻿namespace TicTacToe
+﻿using TicTacToe.Enums;
+
+namespace TicTacToe
 {
-    public enum Marker
-    {
-        X = 'X',
-        O = 'O',
-        None = '-'
-    }
 
     public class Player
     {
         public string Name { get; set; }
-        public Marker Marker { get; set; }
+        public EMarker Marker { get; set; }
 
-        public Player(string name, Marker marker)
+        public Player(string name, EMarker marker)
         {
             Name = name;
             Marker = marker;

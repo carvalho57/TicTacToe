@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            var board = new Board();
-
+            var game = new Game();
+            game.Run();
         }
     }
 }
